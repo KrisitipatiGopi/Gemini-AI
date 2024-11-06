@@ -1,0 +1,120 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 40px;
+    max-width: 15vw;
+    height: 100vh;
+    background-color: lightgray;
+    overflow-y: auto;
+    transition: max-width 0.3s ease;
+}
+
+.topContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    gap: 5px;
+}
+
+.topContainer img {
+    width: 25px;
+    cursor: pointer;
+}
+
+.new_chatContainer {
+    display: flex;
+    gap: 5px;
+    background-color: rgb(92, 66, 66);
+    border-radius: 15px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.new_chatContainer:hover {
+    background-color: rgb(128, 70, 70);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.new_chatContainer img {
+    height: 20px;
+    width: 20px;
+}
+
+.questionsContainer {
+    display: flex;
+    flex-direction: column; /* Align questions vertically */
+    gap: 8px; /* Space between questions */
+    margin-top: 5px;
+}
+
+.questionsContainer .questionItem {
+    display: flex;
+    align-items: center; /* Align icon and text in the same row */
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 3px;
+    font-weight: bold;
+    border: 1px solid grey;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%; /* Ensure it takes up full width */
+    animation: fadeIn 1.5s;
+}
+
+.questionsContainer .questionItem img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.questionsContainer .questionItem p {
+    margin: 0;
+    flex-grow: 1; /* Allow text to grow */
+}
+
+.questionsContainer .questionItem:hover {
+    background-color: black;
+    color: white;
+}
+
+.bottomContainer {
+    margin-top: auto;
+    padding: 10px 5px;
+}
+
+.helpContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.helpContainer:hover {
+    color: #007BFF; /* Hover color for icons */
+    cursor: pointer;
+}
+
+.helpContainer img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.helpContainer:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+@media (max-width:600px){
+    .mainContainer{
+        display: none;
+    }
+}
